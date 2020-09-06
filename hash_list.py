@@ -6,8 +6,11 @@ sha1_hashes = []
 sha256_hashes = []
 sha512_hashes = []
 
-# select new file to analyze.
-new_file_name = input('Please enter the name of the file you wish to analyze.\n: ')
+# select new file to analyze
+if len(sys.argv) > 1:
+    new_file_name = sys.argv[1]
+else:
+    new_file_name = input('Please enter the name of the file you wish to analyze.\n: ')
 # rush the file through the hash algorithms in hash_it.
 new_md5 = hash_it.md5_hash(new_file_name)
 new_sha1 = hash_it.sha1_hash(new_file_name)
