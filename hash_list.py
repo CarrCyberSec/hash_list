@@ -1,7 +1,6 @@
 import sys
 import hash_it
 
-ip_addresses = []
 md5_hashes = []
 sha1_hashes = []
 sha256_hashes = []
